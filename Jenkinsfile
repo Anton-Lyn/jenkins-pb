@@ -11,7 +11,6 @@ pipeline {
         }
         stage('Test') {
          steps {
-             input message : "Continue?"
                 bat 'gradlew.bat test'
             }
         }
